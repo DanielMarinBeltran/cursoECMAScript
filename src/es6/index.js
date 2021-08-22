@@ -86,3 +86,57 @@ console.log(globalVar);
 const a = 'b'; // We can not reassing a const.
 a = 'a';
 console.log (a); // ERROR.
+
+
+let name = 'Daniel';
+let age = 23;
+
+// ECMAScript5
+
+obj = { name: name, age: age};
+
+// ECMAScript6+
+
+obj2 = { name, age }
+console.log(obj2);
+
+
+// Arrow Functions
+
+const names = [ 
+    { name: 'Daniel', age: 23 },
+    { name: 'Yesica', age: 27 }
+];
+
+let lisOfNames = names.map(function(item){
+    console.log(item.name);
+});
+
+let ListOfNames2 = names.map(item => console.log(item.name));
+
+const listOfNames3 = (name, age, country) => {
+    
+};
+
+const listOfNames4 = name => {
+
+};
+
+const square = num => num * num;
+
+// Promises
+
+const helloPromise = () => {
+    return new Promise((resolve, reject) =>{
+        if (true) {
+            resolve('Hey!');
+        }else {
+            reject('Ups!!');
+        }
+    });
+};
+
+helloPromise()
+    .then(response => console.log(response))
+    .then(() => console.log('Hello'))
+    .catch(error => console.los(error));
