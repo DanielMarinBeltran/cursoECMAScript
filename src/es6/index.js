@@ -31,3 +31,58 @@ console.log(epicPhrase2);
 
 
 
+// Before ECMAScript
+let lorem = "Qui consequatur. Commodi. Ipsum vel duis yet minima \n" 
++ "Abother line";
+
+console.log(lorem);
+
+// With ECMAScript
+let lorem2 = `First line with ECMAScript
+Second line with ECMAScript`
+
+console.log(lorem2);
+
+
+let person = {
+    'name': 'Daniel',
+    'age': 23,
+    'country': 'CO',
+}
+
+//Before ECMAScript6
+
+console.log(person.name, person.age);
+
+// With ECMAScript6
+
+let { name } = person;
+
+console.log(name);
+
+
+let team1 = ['Oscar', 'Daniel', 'Ricardo',];
+let team2 = ['Valeria', 'Jesica', 'Camila',];
+
+
+let education = ['David', ...team1, ...tram2];  //This is a new way to add elements from other.
+
+console.log(education);
+
+
+// Diferent kind of Scopes with var and let.
+// var is global and let is block.
+{
+    var globalVar = 'Global var';
+}
+
+{
+    let globalLet = 'Global Let'; 
+    console.log(globalLet);
+}
+console.log(globalVar);
+
+
+const a = 'b'; // We can not reassing a const.
+a = 'a';
+console.log (a); // ERROR.
