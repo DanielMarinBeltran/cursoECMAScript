@@ -51,7 +51,6 @@ const another =async() =>{
 
     } catch (error){
         console.log(error);
-        
     }
 }
 

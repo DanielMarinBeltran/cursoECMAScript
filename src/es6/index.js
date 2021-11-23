@@ -32,7 +32,7 @@ console.log(epicPhrase2);
 
 
 // Before ECMAScript
-let lorem = "Qui consequatur. Commodi. Ipsum vel duis yet minima \n" 
+let lorem = "Qui consequatur. Commodi. Ipsum vel duis yet minima \n"
 + "Abother line";
 
 console.log(lorem);
@@ -103,7 +103,7 @@ console.log(obj2);
 
 // Arrow Functions
 
-const names = [ 
+const names = [
     { name: 'Daniel', age: 23 },
     { name: 'Yesica', age: 27 }
 ];
@@ -115,7 +115,7 @@ let lisOfNames = names.map(function(item){
 let ListOfNames2 = names.map(item => console.log(item.name));
 
 const listOfNames3 = (name, age, country) => {
-    
+
 };
 
 const listOfNames4 = name => {
